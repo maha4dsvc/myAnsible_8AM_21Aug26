@@ -10,6 +10,9 @@
     apt:
       name: tree
       state: absent
-
+  - name: task03
+    apt: 
+     name: wget
+     state: present
   
 
