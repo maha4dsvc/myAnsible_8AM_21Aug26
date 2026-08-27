@@ -3,3 +3,5 @@ var1: value1
 key1: value1
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
+myjavapacakgeonubuntu: openjdk-21-jdk
+myjavapacakgeonredhat: java-21-amazon-corretto-devel
