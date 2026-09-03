@@ -2,7 +2,7 @@
 - name: download tomcat
   ansible.builtin.get_url:
     url: "{{mytomcaturl}}"
-    dest: /home/ubuntu/apache-tomcat-10.1.14.tar.gz
+    dest: /home/maha/apache-tomcat-10.1.14.tar.gz
     mode: '0644'  
     force_basic_auth: yes
 
@@ -13,6 +13,6 @@
 
 - name: extract tomcat
   ansible.builtin.unarchive:
-       src: /home/ubuntu/apache-tomcat-10.1.14.tar.gz
+       src: /home/maha/apache-tomcat-10.1.14.tar.gz
        dest: /opt/tomcat
        remote_src: yes
