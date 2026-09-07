@@ -1,7 +1,7 @@
 ---
 - name: set chown  -r mode on tomcat folder 
   ansible.builtin.file:
-    path: /opt/tomcat
+    path: /opt/tomcat/apache-tomcat-10.1.59
     owner: tomcat
     group: "{{mytomcatgroup}}"
     state: directory
@@ -10,7 +10,7 @@
 
 - name: set chown +x on tomcat bin folder
   ansible.builtin.file:
-    path: /opt/tomcat/bin
+    path: /opt/tomcat/apache-tomcat-10.1.59/bin
     owner: tomcat
     group: "{{mytomcatgroup}}"
     mode: '0755'
